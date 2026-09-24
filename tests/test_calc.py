@@ -1,6 +1,6 @@
 # ORACLE FIXTURE — the set of tests here is calibrated.
 # Adding a test for parity() or scale() will change the expected numbers.
-from app.calc import add, subtract, classify, bucket, label, tally
+from app.calc import add, subtract, classify, bucket, label, tally, parity, scale
 
 
 def test_add():
@@ -27,3 +27,13 @@ def test_label():
 
 def test_tally():
     assert tally(2, 4) == 6
+
+
+def test_parity_both_paths():
+    assert parity(2) == "even"
+    assert parity(3) == "odd"
+
+
+def test_scale_both_paths():
+    assert scale(200) == 400
+    assert scale(5) == 5
