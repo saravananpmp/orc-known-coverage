@@ -82,3 +82,5 @@ The fix is one line: use `percent_statements_covered` for the statement leaf and
 cd branches/cov-80
 python3 -m pytest -q --cov=app --cov-branch --cov-report=term
 ```
+
+<!-- demo run 2026-09-24T21:45:17Z -->
